@@ -1,4 +1,3 @@
-- add accent color frame?
 - improve performance
   - lighthouse audit
   - web vitals audit
