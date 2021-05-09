@@ -1,5 +1,7 @@
-- check social sharing
+- add accent color frame?
 - improve performance
+  - lighthouse audit
+  - web vitals audit
 - move to blog.kirjai.com
 
   - redirect existing links to blog.kirjai.com
@@ -13,8 +15,6 @@
 - links at the bottom of the page?
 - system dark / light mode
   - adjust favicon as well
-- lighthouse audit
-- web vitals audit
 - sort by tags
 - add analytics
   - not google! it's 2021...

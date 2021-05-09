@@ -2,7 +2,7 @@
 layout: post
 tags: ['angular', 'post']
 title: Testing Angular forms with dispatchEvent
-permalink: /testing-angular-forms-with-dispatchevent/index.html
+permalink: /testing-angular-forms-with-dispatchevent/
 date: 2016-12-08
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 tags: ['angular', 'post']
 title: Dynamic guard redirects with route data in Angular
-permalink: /dynamic-guard-redirects-angular/index.html
+permalink: /dynamic-guard-redirects-angular/
 date: 2016-11-23
 ---
 

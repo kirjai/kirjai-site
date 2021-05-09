@@ -2,7 +2,7 @@
 layout: post
 tags: ['angular', 'post']
 title: Testing Angular services with dependencies
-permalink: /testing-angular-services-with-dependencies/index.html
+permalink: /testing-angular-services-with-dependencies/
 date: 2016-11-09
 ---
 

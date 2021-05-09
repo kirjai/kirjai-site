@@ -2,7 +2,7 @@
 layout: post
 tags: ['angular', 'post']
 title: Accessing child component's class with ViewChild
-permalink: /accessing-child-component-with-viewchild/index.html
+permalink: /accessing-child-component-with-viewchild/
 date: 2017-01-10
 ---
 

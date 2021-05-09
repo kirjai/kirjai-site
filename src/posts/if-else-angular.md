@@ -2,7 +2,7 @@
 layout: post
 tags: ['angular', 'post']
 title: Using If - Else syntax in Angular
-permalink: /if-else-angular/index.html
+permalink: /if-else-angular/
 date: 2017-02-27
 ---
 

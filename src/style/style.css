@@ -26,6 +26,14 @@ a:hover {
   color: var(--secondaryDark);
 }
 
+.accent {
+  color: var(--accent);
+}
+
+.accent-frame {
+  border: 10px solid var(--accent);
+}
+
 .post-content > p,
 .post-content > h2,
 .post-content > blockquote,

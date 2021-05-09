@@ -2,7 +2,7 @@
 layout: post
 tags: ['angular', 'post']
 title: Angular component testing with routerLink and routerOutlet
-permalink: /ng2-component-testing-routerlink-routeroutlet/index.html
+permalink: /ng2-component-testing-routerlink-routeroutlet/
 date: 2016-11-07
 ---
 
