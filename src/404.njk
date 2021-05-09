@@ -1,0 +1,27 @@
+---
+permalink: 404.html
+---
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+  <head>
+    {% include "head-stuff.njk" %}
+    <title>@kirjai - blog | 404</title>
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="@kirjai - blog | 404" />
+  </head>
+  <body class="accent-frame h-full flex flex-col">
+    <header>
+      {% include "header.njk" %}
+    </header>
+    <main class="text-center h-96 flex items-center justify-center flex-1">
+      <div>
+        <h1 class="text-4xl p-6">Error 404<h1>
+        <p class="text-xl">Unfortunately, whatever you are looking for isn't here</p>
+        <a href="/">Go to the main page</a>
+      </div>
+    </main>
+    <footer>
+      {% include "footer.njk" %}
+    </footer>
+  </body>
+</html>
