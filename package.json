@@ -5,13 +5,12 @@
   "main": "index.js",
   "scripts": {
     "start": "eleventy --serve --input src",
-    "tailwind:build": "NODE_ENV=production pnpx postcss ./src/style/style.css -o ./_site/style/style.css",
-    "tailwind:watch": "NODE_ENV=development pnpx postcss ./src/style/style.css -o ./_site/style/style.css -w",
-    "style:watch": "NODE_ENV=development pnpx postcss ./src/style/prisma-synthwave-theme.css -o ./_site/style/prisma-synthwave-theme.css",
-    "style:build": "NODE_ENV=production pnpx postcss ./src/style/prisma-synthwave-theme.css -o ./_site/style/prisma-synthwave-theme.css",
-    "build": "pnpm run tailwind:build && pnpm run style:build && NODE_ENV=production eleventy --input src",
-    "serve-build": "pnpm run build && pnpx serve _site",
-    "prebuild": "test \"$CI\" = true && npx pnpm install -r --store=node_modules/.pnpm-store || echo skipping pnpm install",
+    "tailwind:build": "NODE_ENV=production npx postcss ./src/style/style.css -o ./_site/style/style.css",
+    "tailwind:watch": "NODE_ENV=development npx postcss ./src/style/style.css -o ./_site/style/style.css -w",
+    "style:watch": "NODE_ENV=development npx postcss ./src/style/prisma-synthwave-theme.css -o ./_site/style/prisma-synthwave-theme.css",
+    "style:build": "NODE_ENV=production npx postcss ./src/style/prisma-synthwave-theme.css -o ./_site/style/prisma-synthwave-theme.css",
+    "build": "yarn tailwind:build && yarn style:build && NODE_ENV=production eleventy --input src",
+    "serve-build": "yarn build && npx serve _site",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -28,6 +27,7 @@
     "tailwindcss": "^2.1.2"
   },
   "volta": {
-    "node": "14.16.1"
+    "node": "14.16.1",
+    "yarn": "1.22.10"
   }
 }
