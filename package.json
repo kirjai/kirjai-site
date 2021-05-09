@@ -11,6 +11,7 @@
     "style:build": "NODE_ENV=production pnpx postcss ./src/style/prisma-synthwave-theme.css -o ./_site/style/prisma-synthwave-theme.css",
     "build": "pnpm run tailwind:build && pnpm run style:build && NODE_ENV=production eleventy --input src",
     "serve-build": "pnpm run build && pnpx serve _site",
+    "prebuild": "test \"$CI\" = true && npx pnpm install -r --store=node_modules/.pnpm-store || echo skipping pnpm install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
