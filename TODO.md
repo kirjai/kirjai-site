@@ -1,4 +1,3 @@
-- deploy to netlify
 - check social sharing
 - improve performance
 - move to blog.kirjai.com

@@ -9,8 +9,8 @@
     "tailwind:watch": "NODE_ENV=development npx postcss ./src/style/style.css -o ./_site/style/style.css -w",
     "style:watch": "NODE_ENV=development npx postcss ./src/style/prisma-synthwave-theme.css -o ./_site/style/prisma-synthwave-theme.css",
     "style:build": "NODE_ENV=production npx postcss ./src/style/prisma-synthwave-theme.css -o ./_site/style/prisma-synthwave-theme.css",
-    "build": "yarn tailwind:build && yarn style:build && NODE_ENV=production eleventy --input src",
-    "serve-build": "yarn build && npx serve _site",
+    "build": "NODE_ENV=production yarn eleventy --input src && yarn tailwind:build && yarn style:build",
+    "serve-build": "rm -rf _site && yarn build && npx serve _site",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
