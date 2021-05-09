@@ -1,0 +1,7 @@
+{% set css %}
+  {% include "inline-css.css" %}
+{% endset %}
+<style>
+  {{ css | cssmin | safe }}
+</style>
+<link href="/style/style.css" rel="stylesheet" />

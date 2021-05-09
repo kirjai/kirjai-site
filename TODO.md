@@ -1,0 +1,22 @@
+- deploy to netlify
+- check social sharing
+- improve performance
+- move to blog.kirjai.com
+
+  - redirect existing links to blog.kirjai.com
+
+- PERF: optimize fonts
+  - #27: https://www.smashingmagazine.com/2021/01/front-end-performance-2021-free-pdf-checklist/#assets-optimizations
+    - https://www.afasterweb.com/2018/03/09/subsetting-fonts-with-glyphhanger/
+    - https://github.com/Munter/subfont#readme
+    - https://www.zachleat.com/web/comprehensive-webfonts/
+- RSS feed
+- links at the bottom of the page?
+- system dark / light mode
+  - adjust favicon as well
+- lighthouse audit
+- web vitals audit
+- sort by tags
+- add analytics
+  - not google! it's 2021...
+- add 404

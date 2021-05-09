@@ -1,0 +1,32 @@
+{
+  "name": "blog2.0",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve --input src",
+    "tailwind:build": "NODE_ENV=production pnpx postcss ./src/style/style.css -o ./_site/style/style.css",
+    "tailwind:watch": "NODE_ENV=development pnpx postcss ./src/style/style.css -o ./_site/style/style.css -w",
+    "style:watch": "NODE_ENV=development pnpx postcss ./src/style/prisma-synthwave-theme.css -o ./_site/style/prisma-synthwave-theme.css",
+    "style:build": "NODE_ENV=production pnpx postcss ./src/style/prisma-synthwave-theme.css -o ./_site/style/prisma-synthwave-theme.css",
+    "build": "pnpm run tailwind:build && pnpm run style:build && NODE_ENV=production eleventy --input src",
+    "serve-build": "pnpm run build && pnpx serve _site",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.0",
+    "autoprefixer": "^10.2.5",
+    "clean-css": "^5.1.2",
+    "cssnano": "^5.0.2",
+    "postcss": "^8.2.12",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.1.2"
+  },
+  "volta": {
+    "node": "14.16.1"
+  }
+}

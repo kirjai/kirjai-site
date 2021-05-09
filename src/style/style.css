@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primaryLight: #f6f7f3;
+  --primaryDark: #0f0d35;
+  --secondaryDark: #393b63;
+  --accent: #f4bb8a;
+}
+
+body {
+  background-color: var(--primaryLight);
+  color: var(--primaryDark);
+}
+
+a {
+  @apply underline;
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+.secondary-dark {
+  color: var(--secondaryDark);
+}
+
+.post-content > p,
+.post-content > h2,
+.post-content > blockquote,
+.post-content > ul,
+.post-content > pre {
+  @apply px-6 text-lg;
+}
+
+.post-content > h2 {
+  @apply text-2xl pt-4;
+}
+
+.post-content > blockquote {
+  background-color: var(--accent);
+  color: var(--secondaryDark);
+  @apply py-2 italic;
+}
+
+.post-content > ul {
+  @apply list-disc;
+}
+
+.post-date {
+  color: var(--secondaryDark);
+}
+
+.header-content,
+.footer-content {
+  @apply max-w-screen-xl mx-auto p-6;
+}
+
+.header-content a {
+  font-family: var(--bodyFont);
+}
+
+.footer-content > hr {
+  border-color: var(--accent);
+  width: 50%;
+  max-width: 200px;
+  margin: 0 auto;
+}

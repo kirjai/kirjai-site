@@ -1,0 +1,33 @@
+@font-face {
+  font-family: Karla;
+  font-style: normal;
+  font-weight: 500;
+  font-display: auto;
+  src: url('../assets/fonts/Karla-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: normal;
+  font-weight: 500;
+  font-display: auto;
+  src: url('../assets/fonts/Spectral-Regular.woff2') format('woff2');
+}
+
+:root {
+  --headerFont: 'Spectral', serif;
+  --bodyFont: 'Karla', serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--headerFont);
+}
+
+body {
+  font-family: var(--bodyFont);
+}

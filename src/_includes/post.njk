@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {% include "head-stuff.njk" %}
+    <title>{{ title }}</title>
+  </head>
+  <body>
+    <header>
+      {% include "header.njk" %}
+    </header>
+    <main class="py-10 space-y-4 lg:max-w-3xl mx-auto">
+      <div class="px-6 space-y-4">
+        <h1 class="text-4xl">{{ title }}</h1>
+        <p class="post-date">{{ date | contentDate }}</p>
+      </div>
+      <div class="post-content space-y-4">
+        {{ content | safe }}
+      </div>
+    </main>
+    <footer>
+      {% include "footer.njk" %}
+    </footer>
+    <link href="/style/prisma-synthwave-theme.css" rel="stylesheet">
+  </body>
+</html>
