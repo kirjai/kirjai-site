@@ -1,10 +1,12 @@
-- improve performance
-  - lighthouse audit
-  - web vitals audit
 - move to blog.kirjai.com
 
   - redirect existing links to blog.kirjai.com
 
+- add analytics
+  - not google! it's 2021...
+- add 404
+- add og:description
+- add og:image for home route
 - PERF: optimize fonts
   - #27: https://www.smashingmagazine.com/2021/01/front-end-performance-2021-free-pdf-checklist/#assets-optimizations
     - https://www.afasterweb.com/2018/03/09/subsetting-fonts-with-glyphhanger/
@@ -15,6 +17,3 @@
 - system dark / light mode
   - adjust favicon as well
 - sort by tags
-- add analytics
-  - not google! it's 2021...
-- add 404

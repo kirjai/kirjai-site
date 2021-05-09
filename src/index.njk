@@ -15,20 +15,22 @@
     <main class="space-y-12 p-6 lg:max-w-3xl mx-auto">
       <h1 class="text-3xl">All posts</h1>
       {%- for post in collections.post | reverse -%}
-      <li class="list-none">
-        <p class="secondary-dark">{{ post.data.date | contentDate }}</p>
+      <ul>
+        <li class="list-none">
+          <p class="secondary-dark">{{ post.data.date | contentDate }}</p>
 
-        <a href="{{ post.url }}"><h2 class="text-2xl inline pr-4">{{ post.data.title }}</h2></a>
-        {% if post.data.tags %}
-        <div class="secondary-dark inline space-x-1">
-          {%- for tag in post.data.tags -%}
-              {% if tag !== 'post' %}
-                <span>{{ tag }}</span>
-              {% endif %}
-          {%- endfor -%}
-        </div>
-        {% endif %}
-      </li>
+          <a href="{{ post.url }}"><h2 class="text-2xl inline pr-4">{{ post.data.title }}</h2></a>
+          {% if post.data.tags %}
+          <div class="secondary-dark inline space-x-1">
+            {%- for tag in post.data.tags -%}
+                {% if tag !== 'post' %}
+                  <span>{{ tag }}</span>
+                {% endif %}
+            {%- endfor -%}
+          </div>
+          {% endif %}
+        </li>
+      </ul>
       {%- endfor -%}
     </main>
     <footer>
