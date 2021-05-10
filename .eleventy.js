@@ -29,6 +29,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight)
   eleventyConfig.addPassthroughCopy('src/assets')
   eleventyConfig.addPassthroughCopy('src/favicon.ico')
+  eleventyConfig.addPassthroughCopy('src/.well-known')
 
   eleventyConfig.addFilter('cssmin', function (code) {
     return new CleanCSS({}).minify(code).styles

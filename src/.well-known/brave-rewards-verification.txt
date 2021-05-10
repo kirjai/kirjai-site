@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: kirjai.com
+Token: efc7a98543e2c25ced84e9f212d89d5a4659acb44554eb66bfb06563761b8233

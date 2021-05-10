@@ -1,5 +1,3 @@
-- move to blog.kirjai.com
-  - redirect existing links to blog.kirjai.com
 - add og:description
 - add og:image for home route
 - RSS feed
