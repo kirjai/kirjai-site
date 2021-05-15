@@ -1,8 +1,7 @@
-- add og:description
+- add TLDR functionality?
 - add og:image for home route
 - RSS feed
 - links at the bottom of the page?
 - add webmentions?
 - system dark / light mode
   - adjust favicon as well
-- sort by tags
