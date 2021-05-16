@@ -1,40 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    {% include "head-stuff.njk" %}
-    <title>@kirjai - blog | All posts</title>
-    <meta property="og:type" content="article" />
-    <meta property="og:title" content="@kirjai - blog | All posts" />
-    <meta property="og:description" content="List of all blog posts by @kirjai" />
-    <meta name="description" content="List of all blog posts by @kirjai" />
-  </head>
-  <body class="accent-frame">
-    <header>
-      {% include "header.njk" %}
-    </header>
-    <main class="space-y-12 p-6 lg:max-w-3xl mx-auto">
-      <h1 class="text-3xl">All posts</h1>
-      {%- for post in collections.post | reverse -%}
-      <ul>
-        <li class="list-none">
-          <p class="secondary-dark">{{ post.data.date | contentDate }}</p>
-
-          <a href="{{ post.url }}"><h2 class="text-2xl inline pr-4">{{ post.data.title }}</h2></a>
-          {% if post.data.tags %}
-          <div class="secondary-dark inline space-x-1">
-            {%- for tag in post.data.tags -%}
-                {% if tag !== 'post' %}
-                  <span>{{ tag }}</span>
-                {% endif %}
-            {%- endfor -%}
-          </div>
-          {% endif %}
-        </li>
-      </ul>
-      {%- endfor -%}
-    </main>
-    <footer>
-      {% include "footer.njk" %}
-    </footer>
-  </body>
-</html>
+---
+title: "@kirjai - blog | All posts"
+description: List of all blog posts by @kirjai
+layout: collection-list
+collection: ["all", "post"]
+---

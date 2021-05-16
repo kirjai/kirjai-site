@@ -76,3 +76,9 @@ a:hover {
   max-width: 200px;
   margin: 0 auto;
 }
+
+@media (min-width: 1024px) {
+  .lg\:w-3xl {
+    width: 48rem;
+  }
+}

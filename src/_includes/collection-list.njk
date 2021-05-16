@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+  <head>
+    {% include "head-stuff.njk" %}
+    <title>{{ title }}</title>
+    <meta property="og:type" content="article" />
+    {% if title %}
+      <meta property="og:title" content="{{ title }}" />
+    {% endif %}
+    {% if description %}
+      <meta property="og:description" content="{{ description }}" />
+      <meta property="description" content="{{ description }}" />
+    {% endif %}
+  </head>
+  <body class="accent-frame flex flex-col h-full">
+    <header>
+      {% include "header.njk" %}
+    </header>
+    <main class="space-y-12 p-6 lg:w-3xl mx-auto flex-1">
+      <div class="flex items-baseline justify-between">
+        <h1 class="text-3xl"><span class="capitalize">{{ collection[0] }}</span> posts</h1>
+        <p>
+          Filter:
+          <span class="space-x-2">
+          {%- for tagPair in filterTags -%}
+            <a href="/{{ tagPair[1] }}">{{ tagPair[0] }}</a>
+          {%- endfor -%}
+          </span>
+        </p>
+      </div>
+      {%- for post in collections[collection[1]] | reverse -%}
+      <ul>
+        <li class="list-none">
+          <p class="secondary-dark">{{ post.data.date | contentDate }}</p>
+
+          <a href="{{ post.url }}"><h2 class="text-2xl inline pr-4">{{ post.data.title }}</h2></a>
+          {% if post.data.tags %}
+          <div class="secondary-dark inline space-x-1">
+            {%- for tag in post.data.tags -%}
+                {% if tag !== 'post' %}
+                  <a href="/{{ tag }}">{{ tag }}</a>
+                {% endif %}
+            {%- endfor -%}
+          </div>
+          {% endif %}
+        </li>
+      </ul>
+      {%- endfor -%}
+    </main>
+    <footer>
+      {% include "footer.njk" %}
+    </footer>
+  </body>
+</html>
