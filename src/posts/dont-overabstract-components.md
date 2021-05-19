@@ -4,7 +4,7 @@ tags: ['react', 'post']
 title: Don't overabstract your components
 description: Improve your component's API by writing focused abstractions that make your components composable.
 permalink: /component-abstraction/
-date: 2021-05-14
+date: 2021-05-19
 ---
 
 A lot of front end developers nowadays find themselves contributing to component libraries. Component libraries usually consist of components that are reused throughout an application. Some are even used across many different applications. At some point you are tasked with adding a new component. One of the questions you should ask yourself early in the process is - "What should this component's API be?". That is first step in a process known as component API design.
