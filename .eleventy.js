@@ -1,5 +1,6 @@
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
 const CleanCSS = require('clean-css')
+const pluginRss = require('@11ty/eleventy-plugin-rss')
 
 const months = [
   'January',
@@ -27,6 +28,7 @@ module.exports = function (eleventyConfig) {
   nunjucks(eleventyConfig)
 
   eleventyConfig.addPlugin(syntaxHighlight)
+  eleventyConfig.addPlugin(pluginRss)
   eleventyConfig.addPassthroughCopy('src/assets')
   eleventyConfig.addPassthroughCopy('src/favicon.ico')
   eleventyConfig.addPassthroughCopy('src/.well-known')
